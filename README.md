@@ -12,8 +12,18 @@ Projeto de grupo de PDM (CTeSP DAW, ESTA, Universidade dos Açores, 2026/27).
 
 ```bash
 flutter pub get
-flutter run -d chrome
+flutter devices          # o telemóvel Android tem de aparecer aqui
+flutter run              # corre no telemóvel ligado por cabo
+flutter run -d chrome    # no browser, quando não há telemóvel
 ```
+
+Para gerar o APK que se instala noutros telemóveis Android:
+
+```bash
+flutter build apk --release
+```
+
+O ficheiro fica em `build/app/outputs/flutter-apk/app-release.apk`.
 
 ## Estrutura
 
